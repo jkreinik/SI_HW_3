@@ -19,6 +19,13 @@ import re
 # parse_counted_words('101 dalmations!') should return ('101', 'dalmations') ...
 
 ## Write code to define your parse_counted_words function here.
+def parse_counted_words(x): 
+    y=(re.findall("([0-9]+) (\S[a-zA-Z]+)",x))
+    if len(y)>=1:
+        return y[-1]
+    else:
+        return None 
+
 
 
 
