@@ -3,7 +3,7 @@ import re
 
 ## SI 206 - W17 - HW3
 ## COMMENT WITH:
-## Your section day/time:
+## Your section day/time: Thurs 3-4 pm 
 ## Any names of people you worked with on this assignment:
 
 #####################
@@ -46,13 +46,13 @@ regex = r"(/Users|~)"
 full_path = re.findall(regex, data)
 print (full_path)
 full_paths_num = len(full_path)
-print full_paths_num
+print (full_paths_num)
 ## (c) Write Python code to determine how many of these paths describe a Python file saved inside a folder called SI206. Save that number in the variable python_course_paths.
 regex = r"SI206/(\S+[.]py)"
 SI206 = re.findall(regex, data)
-print SI206
+print (SI206)
 python_course_paths = len(SI206)
-print python_course_paths
+print (python_course_paths)
 ## (d) Write Python code to determine how many of these paths describe a Microsoft file (a file that EITHER ends with .docx OR .xlsx, but nothing else counts) where the file name ends in a digit. Save that total in the variable microsoft_files_num.
 regex = r"/(\S+[0-9]+)(.docx|.xlsx)"
 microsoft_file = re.findall(regex,data)
